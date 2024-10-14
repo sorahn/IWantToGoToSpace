@@ -3,9 +3,15 @@ script.on_event(defines.events.on_lua_shortcut, function(event)
     return;
   end
 
-  game.print('Requesting empty inventory via logistics...');
   local player = game.get_player(event.player_index);
   local player_requester_point = player.character.get_requester_point();
+
+  if (player_requester_point == nil) then
+    game.print('No must have the logistics network research to request it be emptied.');
+    return;
+  end
+
+  game.print('Requesting empty inventory via logistics...');
 
   -- turn off personal logistics
   player_requester_point.enabled = true;
