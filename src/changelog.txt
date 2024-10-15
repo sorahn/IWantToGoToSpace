@@ -1,5 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
+Date: 2024-10-15
+  Bugfix:
+    - Typo in print when missing technology
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
 Date: 2024-10-14
   First version:
     - Add button to quickbar to remove items from inventory.

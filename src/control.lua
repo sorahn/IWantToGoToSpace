@@ -7,7 +7,7 @@ script.on_event(defines.events.on_lua_shortcut, function(event)
   local player_requester_point = player.character.get_requester_point();
 
   if (player_requester_point == nil) then
-    game.print('No must have the logistics network research to request it be emptied.');
+    game.print('You must have the logistics network research to request it be emptied.');
     return;
   end
 
